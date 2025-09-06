@@ -1,0 +1,1 @@
+docker run --gpus all --ipc=host --ulimit memlock=-1 --ulimit stack=67108864 -it --privileged --net=host -v /home/benchmark/Projects/contact_graspnet:/workspace/contact_graspnet -e DISPLAY=unix$DISPLAY -v /tmp/.X11-unix:/tmp/.X11-unix -v /tmp/.docker.xauth:/tmp/.docker.xauth:rw -e XAUTHORITY=/tmp/.docker.xauth nvcr.io/nvidia/tensorflow:contact-grasp

@@ -34,7 +34,7 @@ Inference: 1x Nvidia GPU >= 8GB VRAM (might work with less)
 ### Model
 Download trained models from [here](https://drive.google.com/drive/folders/1tBHKf60K8DLM5arm-Chyf7jxkzOr5zGl?usp=sharing) and copy them into the `checkpoints/` folder.
 ### Test data
-Download the test data from [here](https://drive.google.com/drive/folders/1TqpM2wHAAo0j3i1neu3Xeru3_WnsYQnx?usp=sharing) and copy them them into the `test_data/` folder.
+Download the test data from [here](https://drive.google.com/drive/folders/1v0_QMTUIEOcu09Int5V6N2Nuq7UCtuAA?usp=sharing) and copy them them into the `test_data/` folder.
 
 ## Inference
 
@@ -44,9 +44,7 @@ Contact-GraspNet can directly predict a 6-DoF grasp distribution from a raw scen
 Given a .npy/.npz file with a depth map (in meters), camera matrix K and (optionally) a 2D segmentation map, execute:
 
 ```shell
-python contact_graspnet/inference.py \
-       --np_path=test_data/*.npy \
-       --local_regions --filter_grasps
+python contact_graspnet/inference.py --np_path=test_data/*.npy --local_regions --filter_grasps
 ```
 
 <p align="center">

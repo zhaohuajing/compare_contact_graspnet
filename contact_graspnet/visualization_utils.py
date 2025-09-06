@@ -1,5 +1,6 @@
 import numpy as np
 import mayavi.mlab as mlab
+import matplotlib
 import matplotlib.pyplot as plt
 from matplotlib import cm
 
@@ -51,7 +52,7 @@ def show_image(rgb, segmap):
     """
     plt.figure()
     figManager = plt.get_current_fig_manager()
-    figManager.window.showMaximized()
+    # figManager.window.showMaximized()
     
     plt.ion()
     plt.show()

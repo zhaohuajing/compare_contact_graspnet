@@ -566,7 +566,7 @@ def batch_norm_template(inputs, is_training, scope, moments_dims_unused, bn_deca
       'data_format {} is not supported for batch norm.'.format(data_format)
     )
   
-  return tf.compat.v1.layers.batch_normalization(
+  return tf.layers.batch_normalization(
       inputs, center=True, scale=True, training=is_training,
       momentum=bn_decay, axis=axis, name=scope,
     )

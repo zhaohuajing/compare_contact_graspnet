@@ -1,0 +1,8 @@
+pyrender
+trimesh
+pillow
+pyyaml
+opencv-python-headless
+tqdm
+mayavi
+pyqt5
